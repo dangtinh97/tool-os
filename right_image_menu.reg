@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+; ===== Context menu cho file PNG =====
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.png\shell\ModifyImage]
+@="Convert Image To Carbon"
+"Icon"="C:\\Users\\dangt\\AppData\\Local\\Programs\\Python\\Python314\\python.exe"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.png\shell\ModifyImage\command]
+@="\"C:\\Users\\dangt\\AppData\\Local\\Programs\\Python\\Python314\\python.exe\" \"C:\\tools\\modify_image.py\" \"%1\""
