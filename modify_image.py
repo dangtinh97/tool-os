@@ -5,6 +5,7 @@ from PIL import Image, ImageDraw
 HEADER_HEIGHT = 56
 RADIUS = 22
 CANVAS_MARGIN = 40
+BOTTOM_PADDING = 24  # padding bottom cho cửa sổ
 
 # Nền ngoài
 BG_TOP = (190, 198, 202)
@@ -63,7 +64,7 @@ def carbonize(image_path):
 
     # Window size: header + ảnh code full bleed
     window_w = iw
-    window_h = HEADER_HEIGHT + ih
+    window_h = HEADER_HEIGHT + ih + BOTTOM_PADDING
 
     # Canvas
     canvas_w = window_w + CANVAS_MARGIN * 2
